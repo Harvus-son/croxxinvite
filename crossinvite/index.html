@@ -171,16 +171,7 @@ body:after{content:"";position:fixed;inset:0;z-index:100;pointer-events:none;opa
 
 <script>
 const $=s=>document.querySelector(s);
-const envelope=$('#envelope'),openBtn=$('#openBtn');
-let opened=false,audioCtx=null,master=null;
-
-function openLetter(){
- if(opened)return; opened=true; envelope.classList.add('open');
- setTimeout(()=>$('#invite').scrollIntoView({behavior:'smooth',block:'start'}),650);
-}
-openBtn.addEventListener('click',openLetter);
-envelope.addEventListener('click',openLetter);
-envelope.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
+let audioCtx=null,master=null;
 
 const particleRoot=$('#particles');
 for(let i=0;i<42;i++){
@@ -224,5 +215,5 @@ $('#closeModal').onclick=()=>$('#modal').classList.remove('show');
 $('#modal').addEventListener('click',e=>{if(e.target.id==='modal')$('#modal').classList.remove('show')});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#modal').classList.remove('show')});
 </script>
-</body>
+<script src="./js/interactions.js"></script>\n</body>
 </html>
