@@ -72,7 +72,7 @@ h1 strong{font:inherit;font-weight:700}
 .paper-content p{font-size:18px;line-height:1.55;margin:14px auto;max-width:520px}
 .mission{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(83,48,17,.35);border-bottom:1px solid rgba(83,48,17,.35);margin:22px 0;padding:15px 0;gap:10px}
 .mission div{display:flex;flex-direction:column;gap:3px}.mission span{font-size:21px;color:#78251f}.mission b{font:700 10px Cinzel,serif;text-transform:uppercase;letter-spacing:.08em}.mission em{font-size:13px;font-style:italic}
-.final-line{font-style:italic!important;font-weight:600;color:#63231d}
+.final-line{font-style:italic!important;font-weight:600;color:#63231d}.toast-line{font-size:20px!important;font-weight:600;color:#6d281d!important;font-style:italic;margin:18px auto 16px!important;text-shadow:0 1px rgba(255,231,167,.45)}
 .signature{display:flex;justify-content:center;gap:14px;align-items:center;color:#76582e;font:10px Cinzel,serif;letter-spacing:.15em;text-transform:uppercase}
 .seal-position{position:absolute;z-index:8;left:50%;top:145px;transform:translateX(-50%);transition:top 1.15s cubic-bezier(.2,.9,.2,1)}
 .opened .seal-position{top:calc(100% - 37px)}
