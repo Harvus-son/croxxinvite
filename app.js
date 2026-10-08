@@ -34,7 +34,7 @@ function Scroll({open}) {
           <div><span>⌛</span><b>Время</b><em>На закате, в час вечернего звона</em></div>
           <div><span>⚔</span><b>Знамя</b><em>Честь превыше страха</em></div>
         </div>
-        <p className="final-line">Да пребудет с нами мужество.</p>
+        <p className="final-line">Да пребудет с нами мужество.</p><p className="toast-line">А после славного похода — поднимем кубки и выпьем пива за победу!</p>
         <div className="signature">
           <span>✦</span><span>Скреплено печатью</span><span>✦</span>
         </div>
