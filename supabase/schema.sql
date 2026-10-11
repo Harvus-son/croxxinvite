@@ -33,21 +33,20 @@ with check (
   and cardinality(drink_preferences) <= 4
 );
 
--- Replace admin@example.com with the EXACT email you will use for administrator login.
 drop policy if exists "Only owner may read registrations" on public.knight_registrations;
 create policy "Only owner may read registrations"
 on public.knight_registrations for select to authenticated
-using ((auth.jwt() ->> 'email') = 'admin@example.com');
+using ((auth.jwt() ->> 'email') = 'ilakucenko2219@gmail.com');
 
 drop policy if exists "Only owner may update registrations" on public.knight_registrations;
 create policy "Only owner may update registrations"
 on public.knight_registrations for update to authenticated
-using ((auth.jwt() ->> 'email') = 'admin@example.com')
-with check ((auth.jwt() ->> 'email') = 'admin@example.com');
+using ((auth.jwt() ->> 'email') = 'ilakucenko2219@gmail.com')
+with check ((auth.jwt() ->> 'email') = 'ilakucenko2219@gmail.com');
 
 drop policy if exists "Only owner may delete registrations" on public.knight_registrations;
 create policy "Only owner may delete registrations"
 on public.knight_registrations for delete to authenticated
-using ((auth.jwt() ->> 'email') = 'admin@example.com');
+using ((auth.jwt() ->> 'email') = 'ilakucenko2219@gmail.com');
 
--- No public SELECT policy exists: visitors can submit, but cannot read registrations.
+-- Public visitors have no SELECT policy and cannot read registration records.
